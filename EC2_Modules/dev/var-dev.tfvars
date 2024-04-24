@@ -1,0 +1,10 @@
+OS_AMI = "ami-01dad638e8f31ab9a"
+Instance_Type  = "t3.micro"
+SecurityGroup-I-TO-I = ["sg-00527a7ca0b887824"]
+SubnetID = "subnet-09d725677e41eadaf"
+EC2KeyPair = "cg-test"
+stack_name = "test-Instance-terraform"
+Application = "to-be-deleted"
+region = "eu-north-1"
+profile = "sudha"
+aws_region = "eu-north-1"

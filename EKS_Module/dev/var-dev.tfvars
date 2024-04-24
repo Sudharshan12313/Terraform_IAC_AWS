@@ -1,0 +1,27 @@
+OS_AMI = "ami-01dad638e8f31ab9a"
+instance_type  = "t3.micro"
+SecurityGroup-I-TO-I = ["sg-00527a7ca0b887824"]
+SubnetID = "subnet-09d725677e41eadaf"
+key_name = "cg-test"
+stack_name = "test-Instance-terraform"
+region = "eu-north-1"
+profile = "sudha"
+aws_region = "eu-north-1"
+Cluster_subnet_ids = ["subnet-09d725677e41eadaf", "subnet-0cf7f317d8cff93f2"]
+eks_name = "Test-Cluster"
+eks_sg = ["sg-00527a7ca0b887824"]
+eks_node_group_role = "arn:aws:iam::590183998690:role/eks_role"
+eks_role = "arn:aws:iam::590183998690:role/eks_role"
+eks_node_group_name = "test-cluster-nodegroup"
+worker_node_subnet_ids =  ["subnet-09d725677e41eadaf", "subnet-0cf7f317d8cff93f2"]
+desired_workernode_size = "2"
+max_workernode_size = "2"
+min_workernode_size = "2"
+disk_size = "30"
+volume_type = "io1"
+Version = "v1-01-001"
+Team = "Sudharshan"
+Owner = "Sudharshan"
+Application = "TestApplication"
+device_name = "/dev/sda1"
+
