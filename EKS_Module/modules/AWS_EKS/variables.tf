@@ -2,6 +2,13 @@ variable "SecurityGroup-I-TO-I" {
 }
 variable "eks_name" {
 }
+variable "aws_access_key" {
+  description = "AWS Access Key ID"
+}
+
+variable "aws_secret_key" {
+  description = "AWS Secret Access Key"
+}
 
 variable "instance_type"{
 }
