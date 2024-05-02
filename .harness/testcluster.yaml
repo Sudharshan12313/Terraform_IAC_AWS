@@ -1,0 +1,8 @@
+environment:
+  name: test-cluster
+  identifier: testcluster
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: default_project
