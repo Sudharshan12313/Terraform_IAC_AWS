@@ -3,8 +3,8 @@ module "terra_vpc" {
   eks_name = var.eks_name
   eks_sg = var.eks_sg
   eks_node_group_role = var.eks_node_group_role
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+  aws_access_key = var.aws_access_key
+  aws_secret_key = var.aws_secret_key
   eks_role = var.eks_role
   Cluster_subnet_ids = var.Cluster_subnet_ids
   eks_node_group_name = var.eks_node_group_name
