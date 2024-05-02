@@ -26,7 +26,7 @@ module "terra_vpc" {
   OS_AMI = var.OS_AMI
   }
 
-  resource "aws_s3_bucket" "mybucket" {
-  bucket = "s3statebackend4231new"
-}
+ # resource "aws_s3_bucket" "mybucket" {
+ # bucket = "s3statebackend4231new"
+#}
 
