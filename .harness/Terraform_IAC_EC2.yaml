@@ -35,7 +35,11 @@ pipeline:
                     command: |-
                       cd EC2
                       terraform init
-                      terraform workspace list
-                      terraform workspace select default
-                      terraform destroy -auto-approve -var="aws_access_key=AKIAYS2NVETRMQZH3DMM" -var="aws_secret_key=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"
+                      terraform apply -auto-approve -var="aws_access_key=AKIAYS2NVETRMQZH3DMM" -var="aws_secret_key=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"
+                      export AWS_ACCESS_KEY_ID="AKIAYS2NVETRMQZH3DMM"
+                      export AWS_SECRET_ACCESS_KEY="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"
+
+                      # Optionally set other AWS configuration parameters
+                      export AWS_DEFAULT_REGION="eu-north-1"
+                      aws sts get-caller-identity
                   description: Create EC2 Infrastructure using terraform scripts
