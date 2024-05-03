@@ -34,5 +34,6 @@ pipeline:
                     shell: Sh
                     command: |-
                       cd EC2
+                      terraform init
                       terraform destroy -auto-approve -var="aws_access_key=AKIAYS2NVETRMQZH3DMM" -var="aws_secret_key=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"
                   description: Create EC2 Infrastructure using terraform scripts
